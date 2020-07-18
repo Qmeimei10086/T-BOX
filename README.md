@@ -44,11 +44,9 @@ T-BOX是一个小巧可爱的脚本,集成了多个稳定的脚本,于大名鼎�
  
  注意:后门要配合监听使用,先启动监听在启动生成的后门
  
- 例如:先开启exploit/listen/windows 的监听在开启auxiliary/summon/windows生成的后门
+ 例如:先开启exploit/listen/windows 的监听再开启auxiliary/summon/windows生成的后门
  
       
- 
- 
  感谢你的观看
  
   
