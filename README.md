@@ -38,23 +38,23 @@ T-BOX是一个小巧可爱的脚本,集成了多个稳定的脚本,于大名鼎�
 
 ---命令----------------用法---------------------功能---------------------例子-------
       
-   use               use + 路径             启动一个模块            use exploit/listen/php
+   use                use + 路径              启动一个模块               use exploit/listen/php
      
-   search          search + 模块名           搜索模块路径            search php
+   search           search + 模块名            搜索模块路径               search php
   
-  show options                         展示需要填写的选项(已经启用模块)
+  show options                          展示需要填写的选项(已经启用模块)
   
-  show exploit                               展示所有攻击模块
+  show exploit                                展示所有攻击模块
  
- show auxiliary                              展示所有辅助模块
+ show auxiliary                               展示所有辅助模块
      
-   run                                开始攻击(已经启动模块并填写好信息)
+   run                                 开始攻击(已经启动模块并填写好信息)
      
-   set            set + 选项 + 参数        填写信息(已经启用模块)       set rhost 192.168.0.3
+   set             set + 选项 + 参数          填写信息(已经启用模块)        set rhost 192.168.0.3
     
-   back                                       退出模块
+   back                                        退出模块
     
-   exit                                       退出T-BOX
+   exit                                        退出T-BOX
 
 你可以用'?' 或者'help'命令再次看到这些信息
 
