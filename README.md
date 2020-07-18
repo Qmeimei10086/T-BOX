@@ -8,6 +8,8 @@ T-BOX是一个小巧可爱的脚本,集成了多个稳定的脚本,于大名鼎�
 
 由python3编写
 
+适合于 windows / linux
+
 需要安装的库：
   
   scapy
@@ -58,6 +60,8 @@ T-BOX是一个小巧可爱的脚本,集成了多个稳定的脚本,于大名鼎�
  例如:先开启exploit/listen/windows 的监听在开启auxiliary/summon/windows生成的后门
  
       
+ 
+ 
  感谢你的观看
  
   
