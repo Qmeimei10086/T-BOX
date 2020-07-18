@@ -1,0 +1,89 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>sqlmap-GUI</title>
+    </head>
+    
+<body>
+    <form action="/wait" method="GET">
+        <div id="url">
+            <a>网址(https):</a>
+            <input class="text" type="text" name="url" placeholder="不需要加'?id=1(https)" required value=""> 
+        </div>
+        
+        <div>
+            <a>线程:</a>  
+            <input class="text" type="text" name="thread" placeholder="1-10">
+        </div>
+        
+        <div id="data">
+            <a>指定数据库</a><br>
+            <input type="radio" name="data" value="PostgreSQL">PostgreSQL<br>
+            <input type="radio" name="data" value="mysql">Mysql<br>
+            <input type="radio" name="data" value="Oracle">Oracle<br>
+            <input type="radio" name="data" value="默认" checked="checked">默认
+        </div>
+
+        <div id="user-agent">
+            <a>user-agent(可以不写)</a><br>
+            <input class="text" type="text" name="user-agent" placeholder="指定user-agent"> 
+        </div>
+        
+        <div id="cookie">
+            <a>cookie(可以不写)</a><br>
+            <input class="text" type="text" name="cookie" placeholder="指定cookie"> 
+        </div>
+
+        <div id="tamper">
+            <a>指定tamper(绕过waf,以下为全版本通用)</a><br>
+            <input type="radio" name="tamper" value="none">无<br>
+            <input type="radio" name="tamper" value="apostrophemask">apostrophemask<br>
+            <input type="radio" name="tamper" value="apostrophenullencode">apostrophenullencode<br>
+            <input type="radio" name="tamper" value="base64encode">base64encode<br>
+            <input type="radio" name="tamper" value="between">between<br>
+            <input type="radio" name="tamper" value="chardoubleencode">chardoubleencode<br>
+            <input type="radio" name="tamper" value="charencode">charencode<br>
+            <input type="radio" name="tamper" value="equaltolike">equaltolike<br>
+            <input type="radio" name="tamper" value="charunicodeencode">charunicodeencode<br>
+            <input type="radio" name="tamper" value="greatest">greatest<br>
+            <input type="radio" name="tamper" value="ifnull2ifisnull">ifnull2ifisnull<br>
+            <input type="radio" name="tamper" value="multiplespaces">multiplespaces<br>
+            <input type="radio" name="tamper" value="nonrecursivereplacement">nonrecursivereplacement<br>
+            <input type="radio" name="tamper" value="percentage">percentage<br>
+            <input type="radio" name="tamper" value="randomcase">randomcase<br>
+            <input type="radio" name="tamper" value="securesphere">securesphere<br>
+            <input type="radio" name="tamper" value="space2comment">space2comment<br>
+            <input type="radio" name="tamper" value="space2plus">space2plus<br>
+            <input type="radio" name="tamper" value="space2randomblank">space2randomblank<br>
+            <input type="radio" name="tamper" value="unionalltounion">unionalltounion<br>
+            <input type="radio" name="tamper" value="unmagicquotes">unmagicquotes<br>
+        </div>
+        
+        <div id="tampers">
+            <a>自己指定tamper</a><br>
+            <input class="text" type="text" name="tampers" placeholder="指定tamper">
+        </div>
+
+        <div id="level">
+            <a>指定测试等级:</a>
+            <input class="text" type="text" name="level" placeholder="指定测试等级 1-5">
+        </div>
+        
+        <div id="win">
+            <a>指定获取结果</a><br>
+            <input type="checkbox" name="win" value="banner">banner信息<br>
+            <input type="checkbox" name="win" value="os-pwn">反弹shell<br>
+            <input type="checkbox" name="win" value="all">获取所有<br>
+            <input type="checkbox" name="win" value="users">获取所有用户名<br>
+            <input type="checkbox" name="win" value="passwords">获取所有密码<br>
+            <input type="checkbox" name="win" value="tables">获取所有表<br>
+            <input type="checkbox" name="win" value="dbms">获取所有当前数据库<br>
+            <input type="checkbox" name="win" value="dump">下载所有网站内容<br>
+            <input type="checkbox" name="win" value="none">无<br>
+        </div>
+        
+        <input class="btn" tabindex="6" type="submit" href="#" value="确认">
+    </form>
+</body>
+</html>
