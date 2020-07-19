@@ -49,7 +49,10 @@ while True:
     #=================================auxiliary===========================================
     if cmd == 'use auxiliary/Directory collection':
         os.system('cd auxiliary && python Directory_collection.py')
-
+    
+    elif cmd == 'use auxiliary/subdomain':
+        os.system('cd auxiliary && python subdomain.py')
+    
     elif cmd == 'use auxiliary/dos':
         os.system('cd auxiliary && python dos.py')
 
@@ -139,6 +142,7 @@ while True:
     elif cmd == 'show auxiliary':
         print('--------------------路径------------------------------作用-------')
         print(' auxiliary/Directory collection                  检索响应中的网址')
+        print(' auxiliary/subdomain                                子域名爆破')
         print(' auxiliary/dos                                     dos流量攻击')
         print(' auxiliary/synflood                                syn流量攻击')
         print(' auxiliary/password/ssh                              爆破ssh密码')
